@@ -15,7 +15,7 @@ No formulas to be developped in EPPlus, all the required calcutions are already 
 
 ## Current Issues
 
-- It seems that EPPlus reformat some of the existing formulas in the spreadsheet
-- Some of the formulas aren't calculated correctly
-- Multiplications doesnt seem to work at all (ie: B1*B2)
+- Formulas not calculated properly (for instance: in a cell in Excel, I have =B1+B2. Using EPPlus and Calculate(), I'm getting the value of B2 only...)
+- The formulas is being re-written... (for instance, in a cell in Excel, I have =B2-B1. Using EPPlus and Calculate(), also writting the formulas seen by EPPLus, I'm getting B1-B2 and the results are sometime B1-B2 but sometimes B2-B1....)
+- Multiplication aren't even calculated at all. (for instance: in a cell in Excel, I have =B1B2. Using EPPlus and Calculate(), I'm always getting 0 and not error are being triggered)*
 
